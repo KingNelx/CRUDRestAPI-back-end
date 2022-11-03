@@ -26,6 +26,7 @@ public class Doctors {
     private @Getter @Setter int licenseNumber;
     private @Getter @Setter int ptrNumber;
     private @Getter @Setter int prcNumber;
+    private @Getter @Setter int age;
 
 
 }

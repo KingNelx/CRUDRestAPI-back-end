@@ -28,4 +28,8 @@ public class DoctorController {
         return doctorsRepo.findAll();
     }
 
+    @GetMapping("/age45")
+    List<String>getFirstNames(){
+        return doctorsRepo.getFirstNames();
+    }
 }
