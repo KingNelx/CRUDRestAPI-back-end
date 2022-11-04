@@ -13,6 +13,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/doctor")
+@CrossOrigin("http://localhost:3000/")
+
 public class DoctorController {
 
     @Autowired

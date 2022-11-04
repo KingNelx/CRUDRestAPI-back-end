@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/rhu")
+@CrossOrigin("http://localhost:3000/")
 public class RHUController {
 
     @Autowired
