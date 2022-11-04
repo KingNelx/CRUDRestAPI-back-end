@@ -25,5 +25,5 @@ public class Patients {
     private @Getter @Setter String address;
     private @Getter @Setter int age;
     private @Getter @Setter String gender;
-
+    private @Getter @Setter String RHU;
 }
