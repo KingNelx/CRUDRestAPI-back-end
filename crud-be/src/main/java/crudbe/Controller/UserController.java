@@ -8,10 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping  ;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 
 @RestController
 @RequestMapping("/user")
+@CrossOrigin("http://localhost:3000/")
 public class UserController {
 
     @Autowired
@@ -25,5 +28,10 @@ public class UserController {
     @GetMapping("/getAllUsers")
     List<UserModel> getAllUser(){
         return userRepository.findAll();
+    }
+
+    @GetMapping("/user/{id}")
+    UserModel getUserByID(@PathVariable Long id){
+        return userRepository.findById(id).orElseThrow()
     }
 }

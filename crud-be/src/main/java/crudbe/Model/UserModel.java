@@ -19,7 +19,7 @@ public class UserModel {
     @Id
     @GeneratedValue
 
-    private @Getter @Setter Long id;
+    private @Getter @Setter Long id; 
     private @Getter @Setter String firstName;
     private @Getter @Setter String lastName;
     private @Getter @Setter String email;
